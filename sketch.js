@@ -212,6 +212,7 @@ function Money(){
   money=createSprite(Math.round(random(1,500)),Math.round(random(1,500)))
   money.addImage(mi)
   money.scale=0.1
+  money.setlifetime=50
   moneyG.add(money)
 }
 }
@@ -220,6 +221,7 @@ function Money2(){
   money2=createSprite(Math.round(random(1,500)),Math.round(random(1,500)))
   money2.addImage(mi2)
   money2.scale=0.1
+  money2.setlifetime=50
   moneyG2.add(money2)
 }
 }
@@ -228,6 +230,7 @@ function Money3(){
   money3=createSprite(Math.round(random(1,500)),Math.round(random(1,500)))
   money3.addImage(mi3)
   money3.scale=0.1
+  money3.setlifetime=50
   moneyG3.add(money3)
 }
 }
@@ -236,6 +239,7 @@ function Money4(){
   money4=createSprite(Math.round(random(1,500)),Math.round(random(1,500)))
   money4.addImage(mi4)
   money4.scale=0.1
+  money4.lifetime=50
   moneyG4.add(money4)
 }
 }
