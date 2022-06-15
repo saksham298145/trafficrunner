@@ -25,6 +25,8 @@ mi=loadImage("money.png")
 mi2=loadImage("money2.png")
 mi3=loadImage("money3.png")
 mi4=loadImage("money4.png")
+csound=loadSound("cssss.mp3")
+mss=loadSound("mss.wav")
 }
 function setup(){
   canvas = createCanvas(windowWidth, windowHeight);
@@ -95,42 +97,46 @@ player.x=World.mouseX
   if(carG1.isTouching(player)){
     gameState = 2;
     car1.velocityY = 0;
-    
+    csound.play()
    }
    
    if(carG2.isTouching(player)){
      gameState = 2;
      car2.velocityY = 0;
-    
+     csound.play()
    }
    
    if(carG3.isTouching(player)){
      gameState = 2;
      car3.velocityY = 0;
-     
+     csound.play()
    }
    if(carG4.isTouching(player)){
     gameState = 2;
     car4.velocityY = 0;
-    
+    csound.play()
   } 
   Money()
   Money2()
   Money3()
   Money4()
  if(moneyG.isTouching(player)) {
+  mss.play()
   moneyG.destroyEach()
   earning=earning+2000
 }
 if(moneyG2.isTouching(player)) {
+  mss.play()
   moneyG2.destroyEach()
   earning=earning+500
 }
 if(moneyG3.isTouching(player)) {
+  mss.play()
   moneyG3.destroyEach()
   earning=earning+100
 }
 if(moneyG4.isTouching(player)) {
+  mss.play()
   moneyG4.destroyEach()
   earning=earning+200
 }
